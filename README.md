@@ -45,7 +45,45 @@
   - Requirements gathering: It may include a set of use cases, user flows that the software must implement. Software requirements can be classified into four broad categories (functional, external & user interface, non-functional, system features)
   - Design: Transforming requirements into code, application logic.
   - Coding for quality: Refers to the characteristics of the code including attributes such as maintainability, readability, testability, and security.
-    - 
-  - Testing
+  - Testing: The process of verifying that the software matches established requirements and is free of bugs
+    - Unit testing: often done by the developer and tests the smallest component of code
+    - Integration test: occured when the components are integrated into the larger product
+    - System testing: After the larger product is deemed (gần như) completed
+    - UAT (beta testing): The software is tested by the intended end user. 
   - Releases
   - Documenting
+    - System documentation: README files, inline comments, architecture and design documents, verification information and maintenance guides
+    - User documentation: User guides, instructional videos, manuals, online and inline help
+
+## Requirements
+- Requirements documentation:
+  - SRS:
+    - Captures functionalities the software should perform
+    - Establishes benchmarks / service-levels for performance
+    - Purpose and scope (Who has access to the SRS, how it should be used, software benefit)
+    - Constraints, assumptions, dependencies (how the software must operate under given conditions, required OS or hardware, other software products)
+    - Requirements (function of the software, users and interactions with other hardware or software, functions of the system, performance, safety, security, quality)
+  - URS (User requirements specification)
+    - Describe business need and end-user expectations
+    - Confirmed during UAT
+    - Oftern covered in SRS
+  - SysRS (System requirements specification)
+    - Broader than an SRS
+    - Contains: (System capabilities, Interfaces, Policy, Regulation, Personnel, Performance, Security, System acceptance criteria, Hardware expectations
+
+## Common development methodologies
+- A process is needed to clarify where and when communication and facilitate information sharing among team members
+- Sequential methodologies:
+  - Waterfall method: output of the previous step is the input of the next step
+  
+<img width="652" alt="Screenshot 2024-02-15 at 9 43 14 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/fa465219-f5c3-46ab-a350-0fefada220fe">
+
+  - V-shape model:
+    - The phases going down the left side of the V are called “verification". Then, going up the right side of the V, those phases are called, "validation."
+    - The tests are written during the verification phases on the left and executed during the validation stages on the right.
+  
+<img width="687" alt="Screenshot 2024-02-15 at 9 47 00 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/e7047095-06ad-4be9-8d55-dd07e238722c">
+
+- Iterative:
+  - Agile 
+
