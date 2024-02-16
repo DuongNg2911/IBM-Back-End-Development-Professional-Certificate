@@ -85,5 +85,14 @@
 <img width="687" alt="Screenshot 2024-02-15 at 9 47 00 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/e7047095-06ad-4be9-8d55-dd07e238722c">
 
 - Iterative:
-  - Agile 
+  - Agile: Rather than the “maintenance” stage of the SDLC, the final stage of the sprint is a feedback stage. At the end of each sprint, a chunk of working code is released at a meeting called the “sprint demo” where stakeholders can see the new functionality and provide feedback. After the sprint demo, the entire process is repeated for every sprint cycle.
+ 
+<img width="664" alt="Screenshot 2024-02-16 at 11 42 24 AM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/d216cd1a-0b5b-45fd-8a2d-aeaecc4d708e">
 
+## Back-end development 
+- APIs, Routes, and Endpoints process requests from the front-end
+  - API is a code that works with data
+  - Route is a path to a website or page
+  - Endpoint can be an API or route
+- Back-end developers create routes to direct requests to the correct service
+- APIs provide a way for cloud apps to access resources from the back-end 
