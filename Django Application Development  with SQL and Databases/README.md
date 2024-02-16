@@ -82,3 +82,13 @@
 ## Opject-Relational mapping (ORM)
 - Maps data stored in RDBMS into objects
 - Allows developers to query and manipulate data using the OOP paradigm
+
+## Django models
+- Each Django model (class) maps to a database table
+- Each class object represents a database table column
+- Each field represents a database table column
+- Schema and tables are automatically generated once model classes are defined
+
+- Fields:
+  - Each field in a model should be a Field class
+  - Django maps each field to a column type, such as INT, ...
