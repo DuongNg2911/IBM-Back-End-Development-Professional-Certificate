@@ -79,3 +79,6 @@
 ## Django
 - Follow MVC (model view controller) pattern which helps developers to build applications quickly and efficiently and efficiently Django was created to enable rapid development and code reuseability
 
+## Opject-Relational mapping (ORM)
+- Maps data stored in RDBMS into objects
+- Allows developers to query and manipulate data using the OOP paradigm
