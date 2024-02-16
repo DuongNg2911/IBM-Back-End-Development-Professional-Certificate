@@ -2,7 +2,6 @@
 
 ## SDLC 
 - SDLC is a systematic process to develop a software
-- SDLC is a recursive process 
 
 - Phases of SDLC
 
