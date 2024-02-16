@@ -75,3 +75,7 @@
 
 ## DELETE Statement
 - Remove rows from the database 
+
+## Django
+- Follow MVC (model view controller) pattern which helps developers to build applications quickly and efficiently and efficiently Django was created to enable rapid development and code reuseability
+
