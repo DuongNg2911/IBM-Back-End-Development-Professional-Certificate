@@ -95,3 +95,53 @@
   - Endpoint can be an API or route
 - Back-end developers create routes to direct requests to the correct service
 - APIs provide a way for cloud apps to access resources from the back-end 
+
+## Software architecture and design
+- Software architecture is the organization of the system
+- Software architecture list all components and elements that the software must implement
+- Comprised of fundamental structures and behaviors
+- Software architecture guides technology stack choice
+- Technology stacks include:
+  - software
+  - Programming language
+  - Libraries
+  - Frameworks
+
+- Architecture drives production environment choices
+- Production environment is the infrastructure that runs and delivers the software such as:
+  - Servers
+  - Load Balancers
+  - Databases
+ 
+## Software Design and modeling 
+- Software design is the process to document structural components and behavioral attributes
+- Models express software design using:
+  - Diagrams and flowcharts
+  - UML (Unified modeling language)
+
+- Structured design breaks down a software problem into well-organized solution elements
+- Structural diagram has modules and sub-modules
+- Behavioral models describe the behavior of a system
+
+<img width="622" alt="Screenshot 2024-02-17 at 5 17 00 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/44e925c1-44d9-43f8-bea5-7969452b55e4">
+
+- Peer-to-peer: An architecture consists of nodes that behave both as client and as server
+
+<img width="394" alt="Screenshot 2024-02-17 at 5 25 07 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/35de6eec-789a-402e-9e09-7598217bd256">
+
+- Microservices: An architecture has applications composed of several loosely coupled services that communicate using APIs
+
+<img width="452" alt="Screenshot 2024-02-17 at 5 24 55 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/aa61f56f-933f-4648-9498-5d7c42c1eb44">
+
+- Event-driven: An architecture has consumers that send requests to producers
+
+<img width="438" alt="Screenshot 2024-02-17 at 5 25 32 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7f4e852d-de2a-4c68-a474-82a1f5db5a46">
+
+- Two-tier: An architecture has clients that communicate with a server
+
+<img width="341" alt="Screenshot 2024-02-17 at 5 25 19 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/3caeb35b-e88c-4b3b-83ce-98c51c5bc641">
+
+- Three-tier: An architecture consists of three-tiers (presentation, application, and data)
+
+<img width="279" alt="Screenshot 2024-02-17 at 5 25 45 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/40184891-7bde-44dc-9797-cf3c377703fa">
+
