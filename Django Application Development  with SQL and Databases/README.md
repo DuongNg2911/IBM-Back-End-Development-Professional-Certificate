@@ -146,6 +146,8 @@
 - Often View interact with Django model to get required data in the form of QuertSet or objects to generate a Web Response 
 - Django view discribes which data to present in a Web Response
 
+- delegate: choose somebody to do something
+
 <img width="638" alt="Screenshot 2024-02-17 at 9 39 08 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7e9918e5-15ae-43ee-b601-9b22549ee8e8">
 
 ## Django Template
