@@ -102,6 +102,8 @@
 - Relationships:
   - One-to-one (inheritance):
 
+- Django Model APIs allow developers to perform CRUD on objects and developers can also write business logic in Django model classes as functions
+
 <img width="637" alt="Screenshot 2024-02-17 at 5 42 58 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/2949216d-45e3-4d0a-a7b3-fbaae15b9b5a">
 
   - Many-to-one:
@@ -117,3 +119,34 @@
 ## Django Models CRUD
 
 <img width="638" alt="Screenshot 2024-02-17 at 5 54 48 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/eb6ee284-bd92-4b3d-83c6-5ce4ba701a41">
+
+## Related Object 
+
+<img width="679" alt="Screenshot 2024-02-17 at 9 00 23 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/29094348-881a-432a-9142-84d6208fd2f0">
+
+<img width="656" alt="Screenshot 2024-02-17 at 9 01 21 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7116fbc5-b6b7-481b-af6c-d03a1e641bc9">
+
+<img width="636" alt="Screenshot 2024-02-17 at 9 02 09 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/34c1e205-8fb0-426c-954b-08271be78bdd">
+
+<img width="647" alt="Screenshot 2024-02-17 at 9 03 18 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/8f2827ef-7e58-41f3-acf8-2ef4e4ad3684">
+
+- Django only requires you to define relationship on one side, called a forward relationship, then Django will automatically create a backward or implicit relationship.
+
+## Model-View-Controller (MVC)
+
+<img width="678" alt="Screenshot 2024-02-17 at 9 15 55 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/4ec09b07-9085-4e6f-a667-95c90f7cb0f5">
+
+## Django Model-View-Template (MVT)
+- Django framework acts as controller 
+
+<img width="660" alt="Screenshot 2024-02-17 at 9 35 10 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/87cca64e-fa53-4cdd-8a43-fdf3c199984c">
+
+## Django View
+- In Django, a view is essentially a python function
+- Often View interact with Django model to get required data in the form of QuertSet or objects to generate a Web Response 
+- Django view discribes which data to present in a Web Response
+
+<img width="638" alt="Screenshot 2024-02-17 at 9 39 08 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7e9918e5-15ae-43ee-b601-9b22549ee8e8">
+
+## Django Template
+- Django Template describes exactly how data is presented
