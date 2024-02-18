@@ -98,7 +98,7 @@
 
 ## Software architecture and design
 - Software architecture is the organization of the system
-- Software architecture list all components and elements that the software must implement
+- It includes a definition of which elements and components need to be in the system, which components need to interact with each other, and what type of environment the software needs to operate. 
 - Comprised of fundamental structures and behaviors
 - Software architecture guides technology stack choice
 - Technology stacks include:
@@ -114,34 +114,87 @@
   - Databases
  
 ## Software Design and modeling 
+- Software design happens once the software architecture finished.
 - Software design is the process to document structural components and behavioral attributes
+- Software design focuses on how the individual modules and components will be designed
 - Models express software design using:
   - Diagrams and flowcharts
   - UML (Unified modeling language)
 
-- Structured design breaks down a software problem into well-organized solution elements
-- Structural diagram has modules and sub-modules
-- Behavioral models describe the behavior of a system
+- Structural patterns are design patterns that deal with the composition and organization of classes and objects. They help you define how different components of your system interact and relate to each other. Structural patterns can simplify your code by reducing the number of classes, hiding the complexity of the internal structure, or providing a common interface for different implementations.
+
+- Behavioral patterns are design patterns that deal with the communication and cooperation of classes and objects. They help you define how different components of your system behave and respond to each other. Behavioral patterns can improve your code by enhancing the flexibility, modularity, and reusability of your algorithms, strategies, and commands.
 
 <img width="622" alt="Screenshot 2024-02-17 at 5 17 00 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/44e925c1-44d9-43f8-bea5-7969452b55e4">
 
-- Peer-to-peer: An architecture consists of nodes that behave both as client and as server
+## Application architecture
+- Component:
+  - An individual unit of encapsulated functionality
+  - Serves as a part of an application in conjunction with (liên kết với) other components
+  - Component characteristics:
+    - Reusable: reused in different applications
+    - Replacable: easily replaced with another component
+    - Independent: doesn't have dependencies on other components
+    - Extensible: add behavior without changing other components
+    - Encapsulated: doesn't expose its specific implementation
+    - Non-context specific: operates in different environments
+  - Component examples:
 
+<img width="635" alt="Screenshot 2024-02-18 at 6 23 07 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7c921d8d-12f9-4fd2-ab88-d33c92fcafdd">
+
+- Component-based architecture
+  - Decomposes design into logical components
+  - Higher level abstraction than objects
+  - Defines, composes, and implements loosly coupled independent components so they work together to create an application
+
+- Services:
+  - Also an individual unit of functionality
+  - Designed to be deployed independently and reused by multiple systems
+  - Focused on solution to a business need
+  - The key difference between services and component is that services has one unique, always running instance with whom multiple clients communicate
+
+- NOTE: A service can be made up of several components and components consist of objects. Usually a service provides one complete feature that is made up by combining different components.
+
+- Services-oriented architecture (SOA):
+  - A Loosely coupled services that communicate over a network
+  - Support building distributed systems that deliver services to other applications through the communication protocol
+  
+## Distributed system 
+- Even though multiple services located on diffrent machines. They interact with each other via a communication protocol such as HTTP and appears to the end-user as a single coherent system
+- Distributed system characteristics:
+  - Shares resources: hardware, data, ..
+  - Fault-tolerant: if a node or a service fails, the system continues to run without service interruption
+  - Mutiple activities run concurrently (at the same time)
+  - Scalable as the number of users increases
+  - Runs on a variety of computers: The computers running the distributed system do not need to use the same kind of hardware or OS
+  - Programmed in a variety of programming languages.
+
+## Architectural patterns
+- An architectural pattern is a repeatable solution to a problem in software architecture
+- Peer-to-peer: An architecture consists of nodes that behave both as client and as server without using a central server 
+  - Example: Cryptocurrency 
 <img width="394" alt="Screenshot 2024-02-17 at 5 25 07 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/35de6eec-789a-402e-9e09-7598217bd256">
 
 - Microservices: An architecture has applications composed of several loosely coupled services that communicate using APIs
-
+  - An orchestration handles communication between these services
+  - Example: Social Media 
 <img width="452" alt="Screenshot 2024-02-17 at 5 24 55 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/aa61f56f-933f-4648-9498-5d7c42c1eb44">
 
-- Event-driven: An architecture has consumers that send requests to producers
+- Event-driven: An architecture has consumers that send requests to producers where ingestion = routing
+  - Example: Ride sharing 
 
 <img width="438" alt="Screenshot 2024-02-17 at 5 25 32 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7f4e852d-de2a-4c68-a474-82a1f5db5a46">
 
 - Two-tier: An architecture has clients that communicate with a server
-
+  - The server hosts, delivers, and manages most of the resources and services delivered to the client
+  - Example: Messaging apps
+  
 <img width="341" alt="Screenshot 2024-02-17 at 5 25 19 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/3caeb35b-e88c-4b3b-83ce-98c51c5bc641">
 
-- Three-tier: An architecture consists of three-tiers (presentation, application, and data)
+- Three-tier: An architecture consists of three-tiers (presentation (UI), application (business logic), and data (data storage))
+  - Example: Web apps, presentation layer presents UI, application layer processes user inputs and a database server handles data management
 
 <img width="279" alt="Screenshot 2024-02-17 at 5 25 45 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/40184891-7bde-44dc-9797-cf3c377703fa">
 
+- Combining patterns:
+  - Some patterns can be combined in a single system while some cannot.
