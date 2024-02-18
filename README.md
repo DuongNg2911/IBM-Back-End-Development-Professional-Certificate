@@ -148,7 +148,7 @@
   - Defines, composes, and implements loosly coupled independent components so they work together to create an application
 
 - Services:
-  - Also an individual unit of functionality
+  - Also an individual unit of functionality 
   - Designed to be deployed independently and reused by multiple systems
   - Focused on solution to a business need
   - The key difference between services and component is that services has one unique, always running instance with whom multiple clients communicate
