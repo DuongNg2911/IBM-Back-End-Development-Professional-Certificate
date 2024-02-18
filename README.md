@@ -198,3 +198,73 @@
 
 - Combining patterns:
   - Some patterns can be combined in a single system while some cannot.
+  - Example: 3-tier with microservices, peer-to-peer with event-driven, peer-to-peer cannot combine with two-tier
+
+## Application Deployment Environments
+- An application environments is the combination of the hardware and software resources required to run an application
+- Including:
+  - Application code for its various components or modules
+  - Software stack requires for running the application (libraries, apps, middleware, OS)
+  - Networking infrastructure
+  - Hardware (computing, memory and storage)
+
+- Pre-production environments are those platforms that the application resides on in various forms as it gets prepared for production
+  - Common pre-production environments are development, QA, and staging
+  - Development: developer's workstation
+  - QA: QA team tests the application's components
+  - Staging: replicating the production environment but not meant for general users
+- Production environment
+  - Including the entire solution stack
+  - Intended for all users
+  - Other non-functional requirements:
+    - Security
+    - Reliability
+    - Scalability
+  - More complex than pre-production environments
+
+- Options for deploying application environments
+  - On-premises deployment
+    - System and infrastructure reside in-house within organization's hardware, often behind a firewall. Firewalls prevent access to or from a private network
+    - Offers greater security or control of an application and the data in-use for that application
+    - An organization is responsible for the system, hardware related infrastructure and maintenance required to run the application
+    - More expensive than cloud deployment
+  - Cloud deployment:
+    - Public: Shared infrastructure with other companies over internet and hardware owned by the cloud provider. For example, AWS, Microsoft Azure, Google Cloud or IBM Cloud. Most common due to its scalability and cost.
+    - Private: Infrastructure is provisioned (cung cấp) for a single organization. The main advantage is it not only increases security but also allows for more flexibility because it can be fully customized.
+    - Hybrid: Optimize the advantages of both private and public cloud
+
+## Production Deloyment Components
+
+<img width="660" alt="Screenshot 2024-02-18 at 9 31 49 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/6cc338b8-26cd-4a73-817a-3112917d0035">
+
+- Not necessary have all these components in one infrastructure.
+- Firewall:
+  - Monitors traffic between an interior and an exterior network
+  - Permits or blocks data based on a set of security rules
+  - Acts as a barrier between networks to block viruses and hackers from accessing the internal network
+
+- Load balancers:
+  - Purpose: distributes traffic efficiently amongst multiple servers
+  - Functions:
+    - Load balancers are used to prevent server traffic overload and are located between clients
+    - Maximizes server capabilities and responsiveness
+    - Ensures no one server is overworked
+    - Manages concurrent requests fast and reliably 
+
+- Web and application servers
+  - Servers:
+    - Provide services, resources, data, or applications to a client
+    - Store, process, and manage network data, devices, and systems
+  - Web servers:
+    - Delivers web pages, files, images, and videos to the client
+    - Responds to HTTP requests from a web browser
+  - App servers:
+    - Runs the business logic and provides the app to the client or the web server
+    - Its primary job is to enable interaction between the end-user and the server-side application code
+    - The application code represents the bussiness logic that determines how data can be created, stored, or changed
+  - Proxy server:
+    - An intermediate server that sits in between two tiers and handles requests between those tiers
+    - A proxy server can be used for load balancing, system optimization, caching, as a firewall, obscuring the source of a request, encrypting messages, scanning for malware, and more
+    - Can improve efficiency, privacy, and security of data flowing through a network
+  - Databases server:
+    - Control the flow and storage of data
