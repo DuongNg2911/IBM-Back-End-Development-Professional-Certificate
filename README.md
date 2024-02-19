@@ -58,7 +58,7 @@
 - Requirements documentation:
   - SRS:
     - Captures functionalities the software should perform
-    - Establishes benchmarks / service-levels for performance
+    - Establishes benchmarks / service-levels for performance, capacity estimation
     - Purpose and scope (Who has access to the SRS, how it should be used, software benefit)
     - Constraints, assumptions, dependencies (how the software must operate under given conditions, required OS or hardware, other software products)
     - Requirements (function of the software, users and interactions with other hardware or software, functions of the system, performance, safety, security, quality)
@@ -69,7 +69,7 @@
   - SysRS (System requirements specification)
     - Broader than an SRS
     - Contains: (System capabilities, Interfaces, Policy, Regulation, Personnel, Performance, Security, System acceptance criteria, Hardware expectations
-
+    
 ## Common development methodologies
 - A process is needed to clarify where and when communication and facilitate information sharing among team members
 - Sequential methodologies:
