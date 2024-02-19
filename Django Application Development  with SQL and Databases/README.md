@@ -150,5 +150,13 @@
 
 <img width="638" alt="Screenshot 2024-02-17 at 9 39 08 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/7e9918e5-15ae-43ee-b601-9b22549ee8e8">
 
+- A view takes a Web request such as HTTP GET, POST, DELETE, or UPDATE and returns a Web response. The web response can be a string, a JSON/XML file, an HTML page, or an error status indicating errors on the client or server side.
 ## Django Template
 - Django Template describes exactly how data is presented
+
+- Django Template combined HTML elements with tags and variables to determine how the dynamic parts will be inserted. These work together to generate an html page that is rendered in a user's web browser
+
+<img width="653" alt="Screenshot 2024-02-19 at 10 37 01 AM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/6c304497-20a3-49ce-9f87-edc83f13c637">
+
+## Django Admin 
+- Django Admin site is used for managing models that you can customized 
