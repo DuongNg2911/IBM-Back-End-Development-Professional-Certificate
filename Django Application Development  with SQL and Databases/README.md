@@ -154,7 +154,7 @@
 ## Django Template
 - Django Template describes exactly how data is presented
 
-- Django Template combined HTML elements with tags and variables to determine how the dynamic parts will be inserted. These work together to generate an html page that is rendered in a user's web browser
+- Django Template combined static HTML elements with tags and variables to determine how the dynamic parts will be inserted. These work together to generate an html page that is rendered in a user's web browser
 
 <img width="653" alt="Screenshot 2024-02-19 at 10 37 01 AM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/6c304497-20a3-49ce-9f87-edc83f13c637">
 
