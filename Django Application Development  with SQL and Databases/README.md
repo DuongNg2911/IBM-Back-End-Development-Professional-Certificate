@@ -161,7 +161,7 @@
 <img width="653" alt="Screenshot 2024-02-19 at 10 37 01 AM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/6c304497-20a3-49ce-9f87-edc83f13c637">
 
 ## Django Admin 
-- Django Admin site is used for managing models that you can customized 
+- Django Admin site is used for managing models that you can customized so that it can automatically build a site area that you can use to create, view, update, and delete records.
 
 ## Function-based and class-based view 
 - Function-based view was the original view implementation in Django for specific functionalitites
