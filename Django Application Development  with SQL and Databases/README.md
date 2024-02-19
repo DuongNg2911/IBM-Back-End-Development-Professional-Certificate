@@ -53,10 +53,12 @@
 ## Relational Model
 - RM is an abstract model used to organize data within a database.
 - Key advantage of RM is data independence
+-  Instead of focusing on the relationships and instances between entities, tables in the relational model show relevant data, how each table is related.
 
 ## Entity-Relationship model
 - Used as a tool to design relational databases
 - Each entity is map into a table
+- ER model is a diagram type that shows real world objects, their characteristics, and the relationships they have with one another.
 
 ## Primary key vs Foreign key
 - Primary keys uniquely identify a specific row in a table
@@ -160,3 +162,42 @@
 
 ## Django Admin 
 - Django Admin site is used for managing models that you can customized 
+
+## Function-based and class-based view 
+- Function-based view was the original view implementation in Django for specific functionalitites
+- Class-based view was added to improve extensibility and reusability
+- Both function-based and class-based views are essentially Python functions
+
+- Generic class-based view
+  - Help to solve common tasks for developers
+ 
+<img width="645" alt="Screenshot 2024-02-19 at 1 45 03 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/12f8fe2e-5757-4e29-a991-71421375a976">
+
+  - Common generic class-based views:
+    - ListView: Represents a list of objects
+    - DetailView: Represents the details of an object
+    - FormView: Represents a form for submitting data
+    - Group of Date views: Handle date-based data
+
+- Class-based views pros and cons:
+  - Pros:
+    - Reusable: Code for some common tasks can be reused following the OOP paradigm
+    - Extendible: Add logic with minimal code changes
+    - Handle requests using class methods
+    - Leverage built-in generic class-based views
+  - Cons:
+    - Hard to read
+    - Implicit code is hidden from developers
+
+- Function-based views pros and cons:
+  - Pros:
+    - Simple and easy to understand
+    - Explicit code
+    - Mainly built for specific functionality
+  - Cons:
+    - Difficult to extend or reuse
+    - Handle requests using conditional statements which may increase code complexity
+
+## Bootstrap
+- A free front-end framework facilitating web app development
+- Provides common HTML/CSS simplifying Django templates development
