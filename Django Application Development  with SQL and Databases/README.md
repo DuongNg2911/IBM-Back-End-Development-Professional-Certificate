@@ -201,3 +201,51 @@
 ## Bootstrap
 - A free front-end framework facilitating web app development
 - Provides common HTML/CSS simplifying Django templates development
+
+## Web server Django Deployment
+- To deploy reliable, scalable, and maintainable Django apps, we need to deploy them on the web servers
+- Apache HTTP server and Nginx are not written in Python so we need extra interfaces to talk to web servers supporting those interfaces.
+
+<img width="655" alt="Screenshot 2024-02-19 at 2 43 42 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/5f26ed7a-e23c-43e9-8b0a-8fdf3a3fa7a2">
+
+- Web server gateway interface (wsgi): The main python standard for communicating between web servers and applications, it supports synchronous code (only does one task at a time)
+- Asynchronous server gateway interface (asgi): The main difference is that it supports asynchronous code (numerous tasks are executed at the same time)
+
+- Deploying in a production environment is none-trivial (significant) as you need to carefully build and configure infrastructure such as run times, OS, networks, databases and servers to meet your deployment requirements
+- Thanks to infrastructure as a service and platform as a server, you can deploy apps on provisioning platform (công cụ hỗ trợ) with minimal effort
+
+## Cloud django deployment 
+- To run django app on the cloud, you need a mechanism to host the web app and database
+- Mechanism options:
+  - Virtual Machine (VM):
+    - Install OS and software
+    - Manually configure environment
+    - Install dependencies
+    - Deploy Django app
+  - PaaS:
+    - Heroku offers streamlined deployment
+    - Push your code to their Git repository and they hanlded the deployment process automatically
+  - Containerization:
+    - Docker containers package Django app items
+    - Deploys with container orchestration tools like Kubernetes (K8s)
+  - Django database
+    - PostgreSQL
+    - MariaDB
+    - MySQL
+    - Oracle
+    - SQLite
+- Production-ready best practices
+  - Follow best practices and implementation various configurations to ensure scalability security and reliability
+  - Use production database
+    - Recommended to use a robust and scalable database such as PostgreSQL, MySQL, or other relational database
+    - Avoid using SQLite as its not designed for high concurrency and heavy traffic
+  - Secure database credentials
+    - Store sensitive data in environment variables
+    - Never hardcode
+  - HTTPS: Secures communication between servers and clients
+  - Static and media files
+    - Serves in a cloud storage service or CDN (A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users).
+  - Horizontal scaling:
+    - Adds more databases
+  - Monitoring and logging:
+    - Setup error monitoring and logging services to track and diagnose issues 
