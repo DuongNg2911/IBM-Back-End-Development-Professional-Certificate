@@ -24,7 +24,7 @@
     - Minimizes differences between developments and production environments which reduces the chance the code runs appropriately in one env but not in another
     - Parity means use the same backend services across environments which helps catch failures earlier in the development process
   - Factor 2: Dependencies
-    - Explicitly declare all dependencies
+    - Explicitly declare all dependencies as it simplifies setup for developers new to the app.
 
 - Deploy factors:
   - Factor 3: Config
@@ -64,3 +64,22 @@
      - Admin processes are one-off (thực hiện 1 lần) processes for managing an app such as a database migration
      - Run against a release, using same codebase and config
      - Additionally, the application code should include admin processes so that they remain synchronized with the app 
+
+## What are microservices 
+
+- An approach to create a single application composed of:
+  - Many loosely coupled and independently deployable smaller services
+
+- Characteristics of microservices:
+  - Each application component (service) have its own technology stack, inclusive (including) of the database and data management model.
+  - Microservices components communicate with one another over a combination of REST APIs, event streaming and meassage brokers and they are segregated and organized by business functionality referred to as a bounded context
+
+- Benifits of microservices:
+  - Because it is no interdependency between services => update code more easily to add new features or functionality
+  - Different service can use different technology stack => varied expertise
+  - Smaller components can be scaled independently of one another, reducing the waste and cost associated
+ 
+- Scaling microservices
+  - Usually horizontal scalling (adding additional resources such as ram, cpu, gpu)
+  - With microservices, individual services can be individually deployed and scaled therefore it require less infrastructure because they enable precise scaling of only the components that require it
+  - Can use Event drivent instead of API calls 
