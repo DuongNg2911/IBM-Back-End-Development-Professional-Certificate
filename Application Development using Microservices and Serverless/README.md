@@ -83,3 +83,38 @@
   - Usually horizontal scalling (adding additional resources such as ram, cpu, gpu)
   - With microservices, individual services can be individually deployed and scaled therefore it require less infrastructure because they enable precise scaling of only the components that require it
   - Can use Event drivent instead of API calls 
+
+## Monolith vs SOA vs Microservices 
+- Monolith:
+  - Has all or most of its functionality within a single process or server 
+  - The application is managed in internal layers or libraries for:
+    - Security
+    - Reporting
+    - Analytics
+    - UI
+    - Data access
+  - The layers are tightly connected and dependent on each other
+
+  - Benefits:
+    - It is simple and less cross-cutting of features and functionalities since everything is in the same code base.
+  - Drawbacks:
+    - The design becomes more complex and difficult to modify
+    - Less flexibility to adapt to new technology which mean rewriting the whole application
+
+  <img width="605" alt="Screenshot 2024-02-21 at 1 50 59 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/d3861f6a-dc0a-4f6e-b4a0-350fc09b5433">
+
+- SOA:
+  - SOA is designed and built in a service provider and consumer approach
+  - Provides services that are:
+    - Seamless (liền mạch)
+    - Reusable
+  - Each service consists of three components:
+    - Interface: defines how a service provider will execute requests from a service consumer
+    - Contract: defines how the service provider and service consumer should interact
+    - Implementation: the service code
+
+  - Benefits:
+    - Increases reliability
+    - Support paralell development
+
+  - 
