@@ -106,15 +106,26 @@
 - SOA:
   - SOA is designed and built in a service provider and consumer approach
   - Provides services that are:
-    - Seamless (liền mạch)
+    - Seamless integration (liền mạch)
     - Reusable
-  - Each service consists of three components:
+  - Each service should consist of three components:
     - Interface: defines how a service provider will execute requests from a service consumer
     - Contract: defines how the service provider and service consumer should interact
     - Implementation: the service code
 
-  - Benefits:
+  - Benefits of having these three separated components:
     - Increases reliability
     - Support paralell development
 
-  - 
+  - Drawbacks of having these requirements:
+    - An SOA can become complex and obstruct (block) rapid application development
+    - Expensive investment
+
+<img width="652" alt="Screenshot 2024-02-21 at 2 19 56 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/0df6c8f9-1060-4bed-ae6e-09eab6990455">
+
+- Microservices:
+  - Drawbacks:
+    - Security requirement as each service will need its own security paradigm
+    - Debugging is a challenge as each service run independently meaning it is more difficult to locate the root cause
+  
+<img width="648" alt="Screenshot 2024-02-21 at 2 26 32 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/e61ef31a-3d1e-42ff-be75-7c9f04cdedb8">
