@@ -192,3 +192,19 @@
   - Instead of implementing end-user authentication, throttle, orchestrate, transform, route, and analytics in each service, you should use an API Gateway.
   - An API gateway is an API management tool that sits between a client and your collection of backend services.
   - This will become central to the above-mentioned non-functional concerns and will avoid re-engineering them with each service.
+
+## REST API 
+- REST:
+  - Provides flexible and lightweight way to integrate applications
+  - It is an architectural style that defines how apps should communicate on a network.
+
+- Key REST characteristics
+  - Requests managed through HTTP
+  - Stateless client-server communication
+  - Uniform interface between components
+
+- Requests use HTTP
+  - REST APIs communicate via HTTP to perform standard CRUD functions
+
+- Stateless communication
+  - Each request contains all the nec
