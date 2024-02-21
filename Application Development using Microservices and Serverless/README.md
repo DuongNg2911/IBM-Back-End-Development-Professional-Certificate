@@ -129,3 +129,66 @@
     - Debugging is a challenge as each service run independently meaning it is more difficult to locate the root cause
   
 <img width="648" alt="Screenshot 2024-02-21 at 2 26 32 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/e61ef31a-3d1e-42ff-be75-7c9f04cdedb8">
+
+## Microservices Patterns
+
+- Single page application (SPA)
+  - Enabled by more powerful browsers, faster networks and client-side languages
+  - The user enters through one interface that never reloads the landing page or navigates away from that initial experience
+  - Built with HTML, CSS and JS
+  - Respond to user input through dynamic service calls to backend REST-based services that update portions of the screen instead of redirecting to an entirely new page
+  - Simplifies the front-end experience with the tradeoff of more responsibility on the backend services
+  - It delivers poor results across user experiences through different channels, like mobile and web
+  
+- Backend for Frontend (BFF)
+  - Provides superior support compared to a generic backend
+  - It inserts a layer between user experience and the resources which is a backend specifically for the mobile/web application 
+  - Enables customized UX for different channels
+  - Supports one backend type per user interface
+  - For example, the mobile backend will retrieve small amount of data compared with desktop backend due to screen sizes.
+  
+<img width="666" alt="Screenshot 2024-02-21 at 2 44 20 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/f0297c08-13f7-4925-8160-5bbdfaacf451">
+
+## Strangler pattern 
+
+- Strangler pattern helps manage the refractoring (thay đổi cấu trúc mà không làm thay đổi chức năng và giá trị) of a monolithic application in stages.
+- Use the structure of a web application to split an application to functional domains and replace those domains with a new microservices-based implemetation of one domain at a time.
+- These two aspects form separate applications that exist side-by-side in the same URL space
+
+<img width="681" alt="Screenshot 2024-02-21 at 2 57 03 PM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/ca4e4303-f2e3-4026-acdd-178562fb658e">
+
+## Service discovery
+
+- This pattern helps applications and services discover each other which provides flexibility as in Microservices, service instances change dynamically due to scaling, upgrades, service failure, and even service termination
+- Could be used by a load balancers to perform health checks and rebalance traffic on service failures
+
+## Microservices Anti-Patterns 
+
+- Rule 1: Don’t build microservices
+  - Don't start with microservices
+  - When you determine that the monolithic application's complexity negatively affects application development and maintenance, consider refactoring that application into smaller services.
+  - When the application becomes too large to update and maintain easily, these microservices will become ideal for breaking down the complexity and making the application more manageable.
+
+- Rule 2: Not taking automation seriously
+  - If you have a monolith application, you only need to deploy one piece of software. Once you move to a microservices architecture, you will have more than one application with each having different code, test, and deploy cycles.
+  - Attempting to build microservices without either:
+    - Proper deployment and monitoring automation, or 
+    - Managed cloud services to support your now sprawling (​spreading in an untidy way), heterogenous (diverse in content) infrastructure
+  - So, when you are building microservices, always use DevOps or cloud services.
+
+- Rule 3: Don’t build nanoservices
+  - If you go too far with the micro in microservices, you could easily find yourself building nanoservices! The complexity of which will outweigh the overall gains of microservices architecture.
+  - Lean toward creating larger services and create smaller services when:
+    - Deploying changes becomes difficult
+    - The common data model becomes overly complex
+    - Loading and scaling requirements no longer synchronize and affect application performance  
+
+- Rule 4: Don’t turn into SOA
+  - The two concepts; microservices and service-oriented architecture (SOA) are often confused with one another because, at their most basic level, both build reusable individual components that can be consumed by other applications.
+  - However, microservices are fine-grained with independent data storage for each, that is, the bounded context.
+  - A microservices project that morphs into an SOA project will likely buckle under (Bị ảnh hưởng bởi) its own weight.
+
+- Rule 5: Don’t build a gateway for each service
+  - Instead of implementing end-user authentication, throttle, orchestrate, transform, route, and analytics in each service, you should use an API Gateway.
+  - An API gateway is an API management tool that sits between a client and your collection of backend services.
+  - This will become central to the above-mentioned non-functional concerns and will avoid re-engineering them with each service.
