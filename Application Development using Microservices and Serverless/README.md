@@ -194,7 +194,7 @@
   - This will become central to the above-mentioned non-functional concerns and will avoid re-engineering them with each service.
 
 ## REST API 
-- REST:
+- REST (REpresentational State Transfer):
   - Provides flexible and lightweight way to integrate applications
   - It is an architectural style that defines how apps should communicate on a network.
 
@@ -207,4 +207,49 @@
   - REST APIs communicate via HTTP to perform standard CRUD functions
 
 - Stateless communication
-  - Each request contains all the nec
+  -  REST APIs are stateless, meaning that calls can be made independently of one another, and each call contains all of the data necessary to complete itself successfully.
+  -  Stateless nature of REST APIs also makes them scalable 
+
+- Uniform interface (main benefit)
+  - API requests for resources should look the same (uniform way) regardless of device or type of application (website, mobile app). 
+  - The REST API should ensure that the same piece of data belongs to only one uniform resource identifier (or URI)
+  - Resources should contain every piece of information that the client might need
+ 
+## API Gateway
+- It is an API management tool which sits between client and collection of backend services
+
+<img width="489" alt="Screenshot 2024-02-24 at 11 56 58 AM" src="https://github.com/DuongNg2911/IBM-Back-End-Development-Professional-Certificate/assets/127082369/da7438a9-3f26-44fb-ad63-2a519ea8ed91">
+
+- Why using an API Gateway
+  - An API Gateway can help to protect APIs from malicious usage or overuse
+  - It also helps to understand how APIs are used by using analytics and monitoring service
+  - Present a single point of contact to microservices and provides a single response to a request
+  - Add or remove APIs seamlessly without the knowledge about the services running at the backend
+ 
+- Benefits:
+  - It simplifies the client side by moving the logic for calling multiple services from the client to the API Gateway
+  - Provides unified access to API
+  - It reduces the number of requests.
+  - Standard protocol to the outside world
+- Drawbacks:
+  - Complexity
+  - Single point of failure
+  - Increase response time due to additional network step in the execution of the application
+
+## Making API Requests using cURL and Postman 
+- cURL (client URL) is a command line tool and library for transferring data with URLs with the help of some necessary network protocols
+  - Used in command lines or scripts to transfer data
+  - Use cases:
+    - Downloading files from the internet
+    - Endpoint testing
+    - Debugging
+    - Error logging
+  - Protocols:
+    - HTTP, HTTPS, FTP, IMAP
+
+- Postman
+  - An API platform for building and testing APIs
+  - Simplifies each step of API lifecycle
+  - Streamlines collaboration to create better APIs more quickly
+
+ ## Documenting and Testing APIs with Swagger 
