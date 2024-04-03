@@ -19,8 +19,9 @@
     - Data can be stored in a schema-less form
     - Widely used for processing big data
 
-## Relational Database
+## SQL Relational Database
 - Rows are the records, Cols are the attributes
+  
 - Advantages:
   - Create meaningful information by joining tables
   - Flexibility to make changes while the database is in use
@@ -36,6 +37,12 @@
   - Entering a value greater than the defined length of a data field results in loss of information
   - May be expensive to maintain
 
+- SQL Server Databases features:
+  - Stored Procedure: Là một chương trình bao gồm các câu lệnh Transact-SQL (thực chất là các câu lệnh sql) và được lưu lại trên cơ sở dữ liệu.
+    - Ưu điểm:
+      - Chỉ cần viết 1 lần và có thể sử dụng lại nhiều lần
+      - Hiệu suất: Stored Procedure sẽ được biên dịch và lưu vào bộ nhớ khi được tạo ra. Điều đó có nghĩa rằng nó sẽ thực thi nhanh hơn so với việc gửi từng đoạn lệnh SQL tới SQL Server. Vì nếu bạn gửi từng đoạn lệnh nhiều lần thì SQL Server cũng sẽ phải biên dịch lại nhiều lần, rất mất thời gian so với việc biên dịch sẵn. Bên cạnh đấy, việc gửi nhiều câu lệnh SQL thông qua network sẽ ảnh hưởng tới đường truyền (chạy chậm hơn). Do đó thay vì gửi nhiều lần thì bạn có thể gom các câu lệnh SQL vào 1 Stored Procedure và chỉ phải gọi đến 1 lần duy nhất qua network.
+  - Linked Server: Có thể thực hiện lấy dữ liệu từ database server khác nếu cần thiết.
 ## NoSQL
 - There are four common types:
   - Key-value store
