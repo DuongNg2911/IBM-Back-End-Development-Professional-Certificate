@@ -31,5 +31,19 @@
     - Chỉ áp dụng với (SQL database và SQL managed instance)
     - Cho phép bạn chia sẻ tài nguyên cho các instances và databases khác.
     - Sử dụng (SQL database elastic pool) cho (SaaS) khi nó yêu cầu nhiều cơ sở dữ liệu.
-     - 
+   
+- Hybrid deployment: Một nữa được thực hiện on-premises còn một nửa thì trên cloud
+      
 - Điểm khác biệt chính giữ IaaS và PaaS là "versionless" SQL. Trong khi IaaS phải gắn với một phiên bản SQL server nhất định, thì PaaS cho phép Microsoft Azure được cập nhật liên tục các phiên bản của cơ sở dữ liệu SQL
+
+## Purchasing models, service tiers and hardware choices
+- Purchasing models:
+  - Dựa trên virtual cores (vCore-based)
+  - Dựa trên database transaction units (DTU-based) (Không khả dụng trong SQL managed instance)
+  - Khuyên dùng vCore-based bởi vì nó cho phép lựa chọn tài nguyên tính toán và lưu trữ một cách động lập.
+  - Trong vCore model, bạn mua những thứ sau:
+    - Tài nguyên tính toán
+    - Nơi lưu trữ dữ liệu và log
+    - Backup storage location
+- Service tier:
+  - Phục vụ cho performance và availability. 
